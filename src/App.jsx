@@ -35,7 +35,7 @@ function App() {
 
   return (
     <>
-      <div className="flex flex-col title text-center font-raleway my-5 ">
+      <div className="flex flex-col title text-center font-raleway md:my-5 py-2">
         <h1 className="text-center text-4xl font-bold italic text-fourth p-2">
           Free Invoice Generator
         </h1>
@@ -51,7 +51,7 @@ function App() {
         </span>
       </div>
       <hr className="text-fourth" />
-      <main className=" border p-10 m-10 lg:w-1/2 md:w-3/5 lg:mx-auto bg-third text-text font-raleway rounded shadow-2xl">
+      <main className=" border px-6 p-5 md:p-5 m-10 md:w-1/2 w-full mx-auto bg-third text-text font-raleway rounded shadow-2xl">
         {showInvoice ? (
           <>
             <Header handlePrint={handlePrint} />
@@ -70,15 +70,15 @@ function App() {
             <Table list={list} total={total} setTotal={setTotal}/>
             <Footer />
             <button
-              className="lg:w-1/4 mx-auto text-black font-bold p-2 mt-5 rounded bg-fourth hover:bg-secondary hover:text-white border border-black transition ease-in-out"
+              className="md:w-1/4 text-black font-bold p-1 mt-5 rounded bg-fourth hover:bg-secondary hover:text-white border border-black transition ease-in-out"
               onClick={() => setShowInvoice(false)}
             >
               Edit Information
             </button>
           </>
         ) : (
-          <>
-            <div className="flex flex-col justify-center">
+          <div className="">
+            <div className="flex flex-col justify-center ">
               <article className="md:grid grid-cols-2 gap-5">
                 <div className="flex flex-col">
                   <label htmlFor="Name">Business name</label>
@@ -205,7 +205,7 @@ function App() {
                 Show Invoice
               </button>
             </div>
-          </>
+          </div>
         )}
       </main>
     </>

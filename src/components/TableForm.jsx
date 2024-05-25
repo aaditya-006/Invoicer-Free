@@ -128,11 +128,11 @@ const TableForm = ({
       <table className="w-full mt-4 rounded-sm">
         <thead>
           <tr>
-            <th className="py-2 px-4 bg-primary">Items</th>
-            <th className="py-2 px-4 bg-primary">Quantity</th>
-            <th className="py-2 px-4 bg-primary">Price</th>
-            <th className="py-2 px-4 bg-primary">Amount</th>
-            <th className="py-2 px-4 bg-primary">Action</th>
+            <th className="py-2 px-1 md:px-4 bg-primary text-wrap">Items</th>
+            <th className="py-2 px-1 md:px-4 bg-primary">Quantity</th>
+            <th className="py-2 px-1 md:px-4 bg-primary">Price</th>
+            <th className="py-2 px-1 md:px-4 bg-primary">Amount</th>
+            <th className="py-2 px-2 md:px-4 bg-primary">Action</th>
           </tr>
         </thead>
         <tbody>
